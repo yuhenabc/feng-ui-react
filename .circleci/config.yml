@@ -21,6 +21,8 @@ jobs:
 workflows:
   flow:
     jobs:
-      - build
-
-# VS Code Extension Version: 1.5.1
+      - build:
+          filters:
+            branches:
+              only:
+                - main
