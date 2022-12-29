@@ -1,0 +1,26 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.0.3
+
+jobs:
+  build:
+    executor:
+      name: node/default
+      tag: 14.20.0
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          command: node -v
+          name: Check node version
+      - run:
+          command: yarn build
+          name: Build app
+
+workflows:
+  flow:
+    jobs:
+      - build
+
+# VS Code Extension Version: 1.5.1
