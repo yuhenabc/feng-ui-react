@@ -1,0 +1,16 @@
+{
+  "printWidth": 120,
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "semi": false,
+  "endOfLine": "lf",
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useEditorConfig": false,
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "withNodeModules": false
+}
